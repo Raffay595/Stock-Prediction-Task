@@ -4,8 +4,6 @@
 The objective of this task is to predict the **next day’s closing stock price** using historical stock market data.  
 Regression-based machine learning techniques are applied to analyze short-term price movements.
 
----
-
 ## Dataset
 - **Source:** Yahoo Finance  
 - **Access Method:** `yfinance` Python library  
@@ -21,8 +19,6 @@ Regression-based machine learning techniques are applied to analyze short-term p
 ### Target Variable:
 - Next day’s **Close price**
 
----
-
 ## Tools
 - Python
 - Jupyter Notebook
@@ -31,15 +27,11 @@ Regression-based machine learning techniques are applied to analyze short-term p
 - matplotlib
 - scikit-learn
 
----
-
 ## Model Applied
 - **Linear Regression**
 
 The model is trained to predict the next trading day’s closing price using current day market features.  
 Time-series order is preserved during training by disabling data shuffling.
-
----
 
 ## Workflow
 1. Fetch historical stock data using Yahoo Finance API  
@@ -50,18 +42,12 @@ Time-series order is preserved during training by disabling data shuffling.
 6. Evaluate model using Mean Squared Error (MSE)  
 7. Visualize actual vs predicted closing prices  
 
----
-
 ## Results
 - The model produces reasonable short-term predictions.
 - Visualization shows that predicted prices closely follow actual trends.
 - Due to market volatility, the model is **not suitable for long-term forecasting**.
 
----
-
 ## Key Learnings
 - Handling time-series data correctly is critical for stock prediction tasks.
 - Regression models can capture short-term trends but struggle with market uncertainty.
 - Feature selection and proper preprocessing significantly impact model performance.
-
----
